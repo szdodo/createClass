@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace createClass
 {
-    class Room : Employee
+    class Room
     {
-        public int roomNumber { get; set; }
+        public int Number { get; set; }
+
+        public Room (int room)
+        {
+            this.Number = room;
+        }
     }
 }

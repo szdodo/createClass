@@ -8,20 +8,21 @@ namespace createClass
 {
     class Employee : Person, ICloneable
     {
-        public int salary { get; set; }
-        public string profession { get; set; }
+        public int Salary { get; set; }
+        public string Profession { get; set; }
+        public Room Room { get; set; }
 
         public Employee() { }
 
         public Employee(string name, int birthDate, int salary, string profession) : base(name, birthDate)
         {
-            this.salary = salary;
-            this.profession = profession;
+            this.Salary = salary;
+            this.Profession = profession;
         }
 
         public override string ToString()
         {
-            return base.ToString() + ", Salary: " + this.salary + ", Profession: " + this.profession;
+            return base.ToString() + ", Salary: " + this.Salary + ", Profession: " + this.Profession;
         }
 
         /*public object Clone()
@@ -32,7 +33,7 @@ namespace createClass
         public object Clone()
         {
             Employee newEmployee = (Employee)this.MemberwiseClone();
-            //newEmployee.Room = new Room(Room.Number);
+            newEmployee.Room = new Room(Room.Number);
             return newEmployee;
         }
 

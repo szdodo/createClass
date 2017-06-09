@@ -11,22 +11,22 @@ namespace createClass{
         static void Main(string[] args)
         {
             Person per = new Person();
-            per.name = "Ka";
-            per.birthDate = 11;
+            per.Name = "Ka";
+            per.BirthDate = 11;
             Console.WriteLine(per.ToString());
             Person peri = new Person("Kak", 4, Person.Genders.Female);
             Console.WriteLine(peri.ToString());
             Employee em = new Employee();
-            em.name = "Ki";
-            em.birthDate = 2;
-            em.salary = 10;
-            em.profession = "smith";
+            em.Name = "Ki";
+            em.BirthDate = 2;
+            em.Salary = 10;
+            em.Profession = "smith";
             Console.WriteLine(em.ToString());
 
             Employee Kovacs = new Employee("Géza", 1, 1000, "léhűtő");
-            //Kovacs.Room = new Room(111);
+            Kovacs.Room = new Room(111);
             Employee Kovacs2 = (Employee)Kovacs.Clone();
-            //Kovacs2.Room.Number = 112;
+            Kovacs2.Room.Number = 112;
             Console.WriteLine(Kovacs.ToString());
             Console.WriteLine(Kovacs2.ToString());
             Console.ReadKey();

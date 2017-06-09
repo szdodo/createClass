@@ -14,29 +14,29 @@ namespace createClass
             Female
         }
 
-        public string name { get; set; }
-        public int birthDate { get; set; }
-        public Genders gender { get; set; }
+        public string Name { get; set; }
+        public int BirthDate { get; set; }
+        public Genders Gender { get; set; }
 
         public Person() { }
 
         public Person(string name, int birthDate)
         {
-            this.name = name;
-            this.birthDate = birthDate;
+            this.Name = name;
+            this.BirthDate = birthDate;
         }
 
         public Person(string name, int birthDate, Genders gender)
         {
-            this.name = name;
-            this.birthDate = birthDate;
-            this.gender = gender;
+            this.Name = name;
+            this.BirthDate = birthDate;
+            this.Gender = gender;
         }
 
         
         public override string ToString()
         {
-            return "Name: " + this.name + ", Birth date: " + this.birthDate + ", Gender: " + this.gender;
+            return "Name: " + this.Name + ", Birth date: " + this.BirthDate + ", Gender: " + this.Gender;
         }
 
     }
