@@ -20,6 +20,12 @@ namespace createClass
 
         public Person() { }
 
+        public Person(string name, int birthDate)
+        {
+            this.name = name;
+            this.birthDate = birthDate;
+        }
+
         public Person(string name, int birthDate, Genders gender)
         {
             this.name = name;

@@ -22,6 +22,14 @@ namespace createClass{
             em.salary = 10;
             em.profession = "smith";
             Console.WriteLine(em.ToString());
+
+            Employee Kovacs = new Employee("Géza", 1, 1000, "léhűtő");
+            //Kovacs.Room = new Room(111);
+            Employee Kovacs2 = (Employee)Kovacs.Clone();
+            //Kovacs2.Room.Number = 112;
+            Console.WriteLine(Kovacs.ToString());
+            Console.WriteLine(Kovacs2.ToString());
+            Console.ReadKey();
         }
     }
 
